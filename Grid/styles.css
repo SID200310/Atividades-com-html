@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background-color: burlywood;
+    margin: auto;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+        "topo topo topo banner"
+        "menuprincipal menuprincipal menuprincipal menuprincipal"
+        "menusecundario principal principal principal"
+        "rodape rodape rodape rodape"
+    ;
+}
+
+header{
+    background-color: red;
+    text-align: center;
+    grid-area: topo;
+}
+
+aside{
+    background-color: aqua;
+    grid-area: banner;
+}
+
+.mainmenu{
+    background-color: crimson;
+    display: flex;
+    justify-content: space-around;
+    grid-area: menuprincipal;
+}
+
+.sidemenu{
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    grid-area: menusecundario;
+}
+
+main{
+    background-color: chocolate;
+    grid-area: principal;
+}
+
+footer{
+    background-color: cornflowerblue;
+    grid-area: rodape;
+}
+
+header,aside,.mainmenu,.sidemenu,main,footer{
+    padding: 20px;
+    border: 2px solid black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+    font-size: 20px;
+}
+@media screen and (max-width:600px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "topo"
+        "menuprincipal"
+        "principal"
+        "banner"
+        "menusecundario"
+        "rodape"
+        
+        ;
+    }
+}

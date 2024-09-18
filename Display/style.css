@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+div{
+    border: 1px solid blue;
+}
+p,h1{
+    border: 1px solid red;
+}
+ul{
+    border: 1px solid orange;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+li{
+    border: 1px solid green;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    font-size: 3em;
+}
+.container{
+    width: 800px;
+    margin: auto;
+    background-color: greenyellow;
+}

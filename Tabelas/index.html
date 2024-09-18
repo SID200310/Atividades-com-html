@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="estudo de tabela">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        regras de construção de tabelas
+        1 - abrir tag <table> 
+        2 - contar quantas linhas tem a tabela e abrir uma tag <tr> (abrir/fechar) para cada linha. Table Row
+        3 - dentro de cada <tr>, abrir uma <td> por celula
+            Table data 
+    -->
+
+    <table>
+        <th>x</th>
+        <th>Primeira Coluna</th>
+        <th>Segunda Coluna</th>
+        <th>Terceira Coluna</th>
+        <tr>
+            <th>Primeira linha</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>Segunda linha</th>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <th>Terceira linha</th>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <th>Quarta linha</th>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+    <br><hr><br>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td rowspan="2">2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+
+    </table>
+    <br><hr><br>
+    <table>
+        <tr>
+            <td class="azul">1</td>
+            <td class="vermelho" rowspan="3">2</td>
+
+        </tr>
+        <tr>
+            <td class="roxo">3</td>
+
+        </tr>
+        <tr>
+            <td class="verde">4</td>
+        </tr>
+    </table>
+    <br><hr><br>
+    <table>
+        <tr>
+            <td class="marrom" rowspan="3">1</td>
+            <td class="verde">2</td>
+            <td class="azul">3</td>
+        </tr>
+
+        <tr>
+            <td class="vermelho" colspan="2">4</td>
+        </tr>
+
+        <tr>
+            <td class="laranja">5</td>
+            <td class="amarelo">6</td>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+    <table>
+        <tr>
+            <td class="azul">1</td>
+            <td class="vermelho">2</td>
+            <td class="amarelo">3</td>
+        </tr>
+        <tr>
+            <td class="roxo"    colspan="2">4</td>
+            <td class="verde">5</td>
+        </tr>
+        <tr>
+            <td class="laranja" colspan="3">6</td>
+        </tr>
+    </table>
+    <br><hr><br>
+    <table>
+        <tr>
+            <td class="marrom">1</td>
+            <td class="laranja" rowspan="3">2</td>
+            <td class="verde">3</td>
+        </tr>
+        <tr>
+            <td class="roxo">4</td>
+            <td class="amarelo">5</td>
+        </tr>
+        <tr>
+            <td class="vermelho">6</td>
+            <td class="azul">7</td>
+        </tr>
+    </table>
+</body>
+</html>

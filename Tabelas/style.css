@@ -1,0 +1,57 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: gray;
+}
+
+td{
+    padding: 20px;
+    border: 3px solid black;
+    background-color: purple;
+    text-align: center;
+}
+
+table{
+    border: 5px solid blue;
+    margin: auto;
+
+}
+
+td:hover{
+    background-color: aqua;
+    border: 1px solid purple;
+}
+
+th{
+    border: 1px solid black;
+    background-color: purple;
+    
+}
+
+td.vermelho{
+    background-color: red;
+}
+
+td.verde{
+    background-color: green;
+}
+
+td.azul{
+    background-color: blue;
+}
+
+td.roxo{
+    background-color: purple;
+}
+
+td.laranja{
+    background-color: orange;
+}
+
+td.marrom{
+    background-color: brown;
+}
+
+td.amarelo{
+    background-color: yellow;
+}
